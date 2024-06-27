@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 def celsius_to_fahrenheit(celsius):\
+    return (celsius * 9/5) + 32\
+\
+def fahrenheit_to_celsius(fahrenheit):\
+    return (fahrenheit - 32) * 5/9\
+\
+print("Temperature Conversion")\
+print("1. Celsius to Fahrenheit")\
+print("2. Fahrenheit to Celsius")\
+\
+# Take input from the user\
+choice = input("Enter choice (1/2): ")\
+\
+if choice == '1':\
+    celsius = float(input("Enter temperature in Celsius: "))\
+    fahrenheit = celsius_to_fahrenheit(celsius)\
+    print(f"\{celsius\}\'b0C is equal to \{fahrenheit\}\'b0F")\
+elif choice == '2':\
+    fahrenheit = float(input("Enter temperature in Fahrenheit: "))\
+    celsius = fahrenheit_to_celsius(fahrenheit)\
+    print(f"\{fahrenheit\}\'b0F is equal to \{celsius\}\'b0C")\
+else:\
+    print("Invalid input")\
+\
+# Another example for you\
+celsius_example = 25\
+fahrenheit_example = celsius_to_fahrenheit(celsius_example)\
+print(f"\{celsius_example\}\'b0C is equal to \{fahrenheit_example\}\'b0F")\
+\
+fahrenheit_example = 77\
+celsius_example = fahrenheit_to_celsius(fahrenheit_example)\
+print(f"\{fahrenheit_example\}\'b0F is equal to \{celsius_example\}\'b0C")\
+}
